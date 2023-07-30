@@ -1,0 +1,11 @@
+services:
+  python:
+    container_name: python-docker-container
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./src:/opt/mnt
+    ports:
+      - 18888:8888
+    tty: true
