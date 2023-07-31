@@ -7,5 +7,5 @@ services:
     volumes:
       - ./src:/opt/mnt
     ports:
-      - 18888:8888
+      - 8888:8888
     tty: true
